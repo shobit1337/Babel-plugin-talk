@@ -1,7 +1,7 @@
 // babel-traverse is used for updating or removing our nodes in AST
 
-const traverse = require('@babel/traverse').default
-const parser = require('@babel/parser');
+const traverse = require("@babel/traverse").default;
+const parser = require("@babel/parser");
 
 const code = `function square(n) {
   return n * n;
@@ -15,4 +15,4 @@ traverse(ast, {
       path.node.name = "x";
     }
   },
-})
+});
